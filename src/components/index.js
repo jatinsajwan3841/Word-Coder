@@ -40,10 +40,18 @@ export default function Handler() {
                 color="secondary"
                 style={{ height: '3rem', textAlign: 'center' }}
             >
-                <div style={{ marginTop: '0.3rem', fontSize: '1.5rem' }}>
+                <div style={{ marginTop: '0.1rem', fontSize: '1.5rem' }}>
                     Arithmetic Coder
                 </div>
             </AppBar>
+            <p style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
+                *general info :
+                <hr />
+                - You can input only the word to code or can provide the
+                probabilities along with word too. <br />- Iteration 1 is the
+                initial CDF of probabilities, only the max and min value of the
+                last Iteration is of our interest for generating tag value.
+            </p>
             <Container maxWidth="sm">
                 <form onSubmit={result} style={{ marginTop: '1rem' }}>
                     <TextField

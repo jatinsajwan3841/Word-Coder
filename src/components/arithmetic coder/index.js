@@ -98,7 +98,9 @@ export default function ArithmeticCoder({ code, prob }) {
                     {display()}
                 </ul>
             </Paper>
-            Final Result: {(np[0] + np[np.length - 1]) / 2}
+            <center style={{ paddingBottom: '2rem' }}>
+                Tag value: {(np[0] + np[np.length - 1]) / 2}
+            </center>
         </>
     )
 }
