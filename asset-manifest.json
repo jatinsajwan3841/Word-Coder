@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Word-Coder/static/css/main.2ae47eeb.chunk.css",
-    "main.js": "/Word-Coder/static/js/main.a5e348d1.chunk.js",
-    "main.js.map": "/Word-Coder/static/js/main.a5e348d1.chunk.js.map",
+    "main.js": "/Word-Coder/static/js/main.1d32dd45.chunk.js",
+    "main.js.map": "/Word-Coder/static/js/main.1d32dd45.chunk.js.map",
     "runtime-main.js": "/Word-Coder/static/js/runtime-main.34553897.js",
     "runtime-main.js.map": "/Word-Coder/static/js/runtime-main.34553897.js.map",
     "static/js/2.f401b915.chunk.js": "/Word-Coder/static/js/2.f401b915.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.34553897.js",
     "static/js/2.f401b915.chunk.js",
     "static/css/main.2ae47eeb.chunk.css",
-    "static/js/main.a5e348d1.chunk.js"
+    "static/js/main.1d32dd45.chunk.js"
   ]
 }
