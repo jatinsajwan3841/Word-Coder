@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Word-Coder/static/css/main.2ae47eeb.chunk.css",
+    "main.js": "/Word-Coder/static/js/main.8abc8bc9.chunk.js",
+    "main.js.map": "/Word-Coder/static/js/main.8abc8bc9.chunk.js.map",
+    "runtime-main.js": "/Word-Coder/static/js/runtime-main.34553897.js",
+    "runtime-main.js.map": "/Word-Coder/static/js/runtime-main.34553897.js.map",
+    "static/js/2.f401b915.chunk.js": "/Word-Coder/static/js/2.f401b915.chunk.js",
+    "static/js/2.f401b915.chunk.js.map": "/Word-Coder/static/js/2.f401b915.chunk.js.map",
+    "static/js/3.b413a0f1.chunk.js": "/Word-Coder/static/js/3.b413a0f1.chunk.js",
+    "static/js/3.b413a0f1.chunk.js.map": "/Word-Coder/static/js/3.b413a0f1.chunk.js.map",
+    "index.html": "/Word-Coder/index.html",
+    "static/css/main.2ae47eeb.chunk.css.map": "/Word-Coder/static/css/main.2ae47eeb.chunk.css.map",
+    "static/js/2.f401b915.chunk.js.LICENSE.txt": "/Word-Coder/static/js/2.f401b915.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.34553897.js",
+    "static/js/2.f401b915.chunk.js",
+    "static/css/main.2ae47eeb.chunk.css",
+    "static/js/main.8abc8bc9.chunk.js"
+  ]
+}
