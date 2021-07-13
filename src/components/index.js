@@ -15,12 +15,17 @@ export default function Handler() {
 
     const result = (e) => {
         e.preventDefault()
-        setShow(true)
+        if (probs !== null) {
+            const sumValues = Object.values(probs).reduce((a, b) => a + b)
+            if (sumValues !== 1) alert('wrong probabilties input')
+            else setShow(true)
+        }
     }
 
     const handleCode = (e) => {
         setCode(e.target.value)
         setShow(false)
+        setProbs(null)
     }
 
     const handleVI = (e) => {
@@ -57,12 +62,16 @@ export default function Handler() {
                     <TextField
                         name="word"
                         onChange={handleCode}
+                        onBlur={handleCode}
                         value={code}
                         label="Input Word"
                         fullWidth
                     />
                     <Checkbox
-                        onChange={() => setProvided(!provided)}
+                        onChange={() => {
+                            setProvided(!provided)
+                            setProbs(null)
+                        }}
                         inputProps={{ 'aria-label': 'primary checkbox' }}
                     />
                     Select here to input probabilities
@@ -80,7 +89,11 @@ export default function Handler() {
                                         step: '0.01',
                                     }}
                                     style={{ marginBottom: '1rem' }}
-                                    onBlur={handleVI}
+                                    onBlur={(e) => {
+                                        handleVI(e)
+                                        setShow(false)
+                                    }}
+                                    onChange={() => setShow(false)}
                                     label={`probablity of ${value}`}
                                 />
                             </>
@@ -99,6 +112,7 @@ export default function Handler() {
                         type="reset"
                         onClick={() => {
                             setCode('')
+                            setProbs(null)
                             setShow(false)
                         }}
                         color="primary"
