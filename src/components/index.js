@@ -15,26 +15,27 @@ export default function Handler() {
 
     const result = (e) => {
         e.preventDefault()
-        if (probs !== null) {
-            const sumValues = Object.values(probs).reduce((a, b) => a + b)
-            if (sumValues !== 1) {
-                alert('wrong probabilties input')
+        if (provided) {
+            let tmp = {}
+            let count = 0
+            fineInput.forEach((element) => {
+                let val = parseFloat(e.target[element].value)
+                tmp[e.target[element].name] = val
+                count = count + val
+            })
+            if (count !== 1) {
                 setShow(false)
-            } else setShow(true)
-        }
-        setShow(true)
+                alert('wrong probabilties input')
+            } else {
+                setProbs(tmp)
+                setShow(true)
+            }
+        } else setShow(true)
     }
 
     const handleCode = (e) => {
         setCode(e.target.value)
         setShow(false)
-        setProbs(null)
-    }
-
-    const handleVI = (e) => {
-        var tmp = {}
-        tmp[e.target.name] = parseFloat(e.target.value)
-        setProbs({ ...probs, ...tmp })
     }
 
     useEffect(() => {
@@ -92,10 +93,6 @@ export default function Handler() {
                                         step: '0.01',
                                     }}
                                     style={{ marginBottom: '1rem' }}
-                                    onBlur={(e) => {
-                                        handleVI(e)
-                                        setShow(false)
-                                    }}
                                     onChange={() => setShow(false)}
                                     label={`probablity of ${value}`}
                                 />
