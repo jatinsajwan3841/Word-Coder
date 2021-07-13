@@ -17,9 +17,12 @@ export default function Handler() {
         e.preventDefault()
         if (probs !== null) {
             const sumValues = Object.values(probs).reduce((a, b) => a + b)
-            if (sumValues !== 1) alert('wrong probabilties input')
-            else setShow(true)
+            if (sumValues !== 1) {
+                alert('wrong probabilties input')
+                setShow(false)
+            } else setShow(true)
         }
+        setShow(true)
     }
 
     const handleCode = (e) => {
